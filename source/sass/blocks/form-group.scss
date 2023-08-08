@@ -1,0 +1,20 @@
+.form-group {
+  margin: 0;
+  padding: 25px 20px;
+}
+
+.form-group__inputs {
+  margin: 0;
+}
+
+.form-group__item {
+  text-transform: uppercase;
+}
+
+.form-group__input[placeholder] {
+  color: #444444;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}

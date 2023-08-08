@@ -1,0 +1,21 @@
+.hero {
+  margin-bottom: 20px;
+  padding: 27px 20px 0 20px;
+  background: url("../../img/hero-background-mobile.jpg") top center no-repeat;
+  background-size: 320px 302px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.hero__title {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.hero__text {
+  margin: 0;
+  margin-bottom: 29px;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}

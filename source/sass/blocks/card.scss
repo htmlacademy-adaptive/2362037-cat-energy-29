@@ -1,0 +1,19 @@
+.card {
+  padding: 19px 20px 25px 20px;
+  border-top: 1px solid #ebebeb;
+}
+
+.cards__list li:last-child {
+  border-bottom: 1px solid #ebebeb;
+}
+
+.card__link {
+  text-decoration: none;
+}
+
+.card__title {
+  color: #222222;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
