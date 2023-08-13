@@ -1,9 +1,10 @@
-.contacts {
-  margin-bottom: 40px;
-}
-
 .contacts__wrapper {
+  margin: 0 auto;
   padding: 26px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 61px 70px;
+  }
 }
 
 .contacts--background {
@@ -22,4 +23,9 @@
   line-height: 20px;
   font-style: normal;
   color: #444444;
+}
+
+.contacts__map {
+  margin: 0 auto;
+  display: block;
 }

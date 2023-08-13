@@ -1,12 +1,13 @@
-.header__wrapper {
+.container {
   margin: 0 auto;
-  padding: 14px 20px;
+  width: 320px;
 
   @media (min-width: $tablet-width) {
-    padding: 25px 30px 0 30px;
+    width: $tablet-width;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 55px 110px 0 110px;
+    width: $desktop-width;
   }
+
 }

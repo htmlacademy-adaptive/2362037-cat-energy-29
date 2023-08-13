@@ -1,5 +1,20 @@
-.footer {
+.footer__wrapper {
+  margin: 0 auto;
   padding: 40px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 55px 30px;
+    display: flex;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 66px 110px;
+  }
+}
+
+.footer__academy-logo {
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer__academy-logo-text {
