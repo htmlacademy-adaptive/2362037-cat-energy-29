@@ -1,15 +1,30 @@
-.form-header {
-  margin-bottom: 14px;
-  padding: 27px 20px 0 20px;
+.form-header__wrapper {
+  margin: 0 auto;
+  padding: 27px 20px 14px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 67px 70px 36px 70px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 93px 110px 31px 110px;
+  }
 }
 
 .form-header__title {
   margin: 0;
   margin-bottom: 37px;
+  color: #000000;
 }
 
 .form-header__text {
+  margin: 0;
   color: #000000;
   font-size: 14px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

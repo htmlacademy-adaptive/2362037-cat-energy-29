@@ -1,12 +1,44 @@
+.programs__wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
+}
+
 .programs__list {
   margin: 0;
-  padding: 0 20px;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 80px;
+  }
 }
 
 .programs__item {
   margin-bottom: 20px;
   padding: 30px 33px 18px 20px;
   background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 29px 57px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    padding: 77px 61px 59px 52px;
+  }
+}
+
+.programs__item:last-child {
+  margin-bottom: 0;
 }
 
 .programs__title {
@@ -18,6 +50,11 @@
   line-height: 37px;
   text-transform: uppercase;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .programs__link {

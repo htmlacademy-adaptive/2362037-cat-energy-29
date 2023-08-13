@@ -2,9 +2,10 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
-  color: #000000;
-}
 
-.title--inverse {
-  color: #ffffff;
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
 }

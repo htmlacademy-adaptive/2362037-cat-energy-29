@@ -1,5 +1,39 @@
-.other-products li:last-child {
+.other-products__wrapper {
+  margin: 0 auto;
   margin-bottom: 35px;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
+}
+
+.other-products__title {
+  margin: 0;
+  margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 80px;
+  }
+}
+
+.other-products__list {
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
+  list-style: none;
+}
+
+.other-products__item {
+  border-top: 1px solid #ebebeb;
+}
+
+.other-products li:last-child {
+  border-bottom: 1px solid #ebebeb;
 }
 
 .other-products__gift {
@@ -7,6 +41,10 @@
   padding: 0 20px;
   height: 290px;
   background: url("../../img/gift.jpg") top center no-repeat;
+
+  @media (min-width: $tablet-width) and (max-width: 1339px) {
+    background: url("../../img/gift-tablet.jpg") top center no-repeat;
+  }
 }
 
 .other-products__gift-text {

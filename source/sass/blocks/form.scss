@@ -1,3 +1,7 @@
-.form {
-  margin-bottom: 32px;
+.form__wrapper {
+  margin-bottom: 7px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+  }
 }

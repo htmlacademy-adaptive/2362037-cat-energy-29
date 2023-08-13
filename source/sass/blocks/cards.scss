@@ -1,5 +1,40 @@
+.cards__wrapper {
+  margin: 0 auto;
+  margin-bottom: 26px;
+  padding: 27px 20px 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+    padding: 65px 30px 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 76px;
+    padding: 74px 110px 0 110px;
+  }
+}
+
 .cards__list {
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 324px);
+    gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 245px);
+    gap: 63px 80px;
+  }
+}
+
+.cards__list li:last-child {
+  border-bottom: 1px solid #ebebeb;
+}
+
+.cards__item {
+  border-top: 1px solid #ebebeb;
 }
