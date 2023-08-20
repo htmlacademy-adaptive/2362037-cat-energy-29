@@ -1,5 +1,13 @@
 .example {
   background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient(to top, #f2f2f2 462px, #ffffff 462px);
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .example__wrapper {
@@ -16,6 +24,15 @@
   }
 }
 
+.example__wrapper-text {
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 224px;
+    width: 436px;
+  }
+}
+
 .example__title {
   margin: 0;
   margin-bottom: 40px;
@@ -23,6 +40,29 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 146px;
+  }
+}
+
+.example__description {
+  margin: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 60px;
+  }
 }
 
 .example__expenses {
@@ -31,4 +71,80 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 323px;
+  }
+}
+
+.example__list {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 99px;
+    width: 367px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 55px;
+  }
+}
+
+.example__list-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.example__item {
+  padding: 15px;
+  padding-bottom: 18px;
+  width: 124px;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+  text-align: center;
+  border: 1px solid #cdcdcd;
+  border-radius: 4px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+    width: 162px;
+  }
+}
+
+.example__item-description {
+  margin: 0 auto;
+  margin-top: -11px;
+  padding: 0 5px;
+  width: 77px;
+  background-color: #f2f2f2;
+  text-align: center;
+
+  @media (min-width: $tablet-width) and (max-width: 1339px) {
+    background-color: #ffffff;
+  }
+}
+
+.example__slider img {
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
+  }
 }
