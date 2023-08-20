@@ -1,22 +1,43 @@
 .button {
   display: block;
   padding: 10px 44px;
+  width: 100%;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
-}
-
-.button--primary {
+  border: none;
   background-color: #68b738;
 }
 
 .button--hero {
+  margin-left: 90px;
+  padding: 14px 26px;
+  width: 244px;
   font-size: 14px;
   line-height: 18px;
-  color: #ffffff;
   text-decoration: none;
 
   @media (min-width: $tablet-width) {
     width: 244px;
+    z-index: 2;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
+  }
+}
+
+.button--form {
+  @media (min-width: $tablet-width) {
+    margin-right: 64px;
+    padding: 14px 45px;
+    width: 282px;
+    font-size: 20px;
+    line-height: 1;
   }
 }
 

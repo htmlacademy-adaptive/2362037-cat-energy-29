@@ -1,9 +1,17 @@
 .contacts__wrapper {
   margin: 0 auto;
   padding: 26px 20px;
+  display: flex;
+  justify-content: space-between;
 
   @media (min-width: $tablet-width) {
     padding: 61px 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 61px 78px 60px 80px;
+    width: 565px;
+    background-color: #ffffff;
   }
 }
 
@@ -12,17 +20,33 @@
 }
 
 .contacts__offer {
+  margin: 0;
+  width: 140px;
   color: #111111;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 163px;
+    line-height: 26px;
+  }
 }
 
 .contacts__address {
+  width: 140px;
   font-family: "Lato", sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-style: normal;
   color: #444444;
+
+  @media (min-width: $tablet-width) {
+    width: 157px;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    text-align: right;
+  }
 }
 
 .contacts__map {

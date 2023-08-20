@@ -11,13 +11,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../../img/hero-background-desktop.jpg");
+    margin-top: -114px;
+    background-image: url("../../img/hero-background-desktop.jpg"), linear-gradient(to right, #ffffff 50%, #64a73c 50%);
     background-position: top right;
     background-repeat: no-repeat;
   }
 }
 
 .hero__wrapper {
+  position: relative;
   margin: 0 auto;
   margin-bottom: 20px;
   padding: 27px 20px 0 20px;
@@ -25,11 +27,14 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
     padding: 65px 30px 0 30px;
+    display: flex;
+    flex-direction: column;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 82px;
-    padding: 55px 110px 0 110px;
+    padding: 224px 110px 0 110px;
+    height: 694px;
   }
 }
 
@@ -39,33 +44,55 @@
   color: #ffffff;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+    padding-left: 90px;
+    width: 506px;
     color: #000000;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
   }
 }
 
 .hero__text {
   margin: 0;
   margin-bottom: 29px;
+  width: 506px;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+    padding-left: 90px;
     font-size: 20px;
     line-height: 20px;
     color: #000000;
     text-align: left;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
+  }
 }
 
 .hero__img {
   @media (min-width: $tablet-width) {
+    position: relative;
+    left: 23px;
+    top: -80px;
+    display: block;
     width: 709px;
     height: 609px;
+    order: 1;
   }
 
   @media (min-width: $desktop-width) {
+    position: absolute;
     width: 552px;
     height: 499px;
+    top: 143px;
+    left: 557px;
   }
 }

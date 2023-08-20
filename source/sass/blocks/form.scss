@@ -1,7 +1,28 @@
-.form__wrapper {
-  margin-bottom: 7px;
+.form__wrapper-grid {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 110px 570px 80px 570px 110px;
+  }
+}
+
+.form__wrapper-button {
+  margin: 0 auto;
+  padding: 0 20px 32px 0;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 25px;
+    padding: 0 70px 60px 70px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.form__note {
+  margin: 0;
+  margin-top: 21px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    text-align: left;
   }
 }
