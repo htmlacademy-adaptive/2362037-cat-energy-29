@@ -2,8 +2,20 @@
   flex-grow: 1;
 }
 
+.page-content__wrapper {
+  margin: 0 auto;
+  padding: 27px 20px 41px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 65px 30px 84px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 74px 110px 84px 110px;
+  }
+}
+
 .page-content__title {
   margin: 0;
-  margin-bottom: 41px;
   color: #000000;
 }

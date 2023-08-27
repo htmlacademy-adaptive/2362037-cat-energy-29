@@ -1,15 +1,26 @@
 .contacts__wrapper {
   margin: 0 auto;
   padding: 26px 20px;
-  display: flex;
-  justify-content: space-between;
 
   @media (min-width: $tablet-width) {
     padding: 61px 70px;
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
+    padding: 0;
+  }
+}
+
+.contacts__wrapper-flex {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
     padding: 61px 78px 60px 80px;
+    top: 95px;
+    left: 110px;
     width: 565px;
     background-color: #ffffff;
   }
@@ -46,6 +57,10 @@
     flex-direction: column;
     gap: 23px;
     text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
   }
 }
 

@@ -3,9 +3,11 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 26px;
+  max-width: 187px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    max-width: max-content;
   }
 }
