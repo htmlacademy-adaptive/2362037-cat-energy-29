@@ -9,7 +9,27 @@
 
   @media (min-width: $desktop-width) {
     padding: 0 110px;
+    display: flex;
   }
+}
+
+.other-products__list {
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+  }
+}
+
+.other-products__item {
+  border-top: 1px solid #cdcdcd;
+}
+
+.other-products li:last-child {
+  border-bottom: 1px solid #cdcdcd;
 }
 
 .other-products__title {
@@ -21,36 +41,71 @@
   }
 }
 
-.other-products__list {
-  margin: 0;
-  margin-bottom: 35px;
-  padding: 0;
-  list-style: none;
-}
-
-.other-products__item {
-  border-top: 1px solid #ebebeb;
-}
-
-.other-products li:last-child {
-  border-bottom: 1px solid #ebebeb;
-}
-
 .other-products__gift {
   margin-bottom: 35px;
   padding: 0 20px;
-  height: 290px;
-  background: url("../../img/gift.jpg") top center no-repeat;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  min-height: 290px;
+  align-items: center;
+  background: url("../../img/gift-mobile.jpg") top center no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../../img/gift-mobile@2x.jpg") top center no-repeat;
+    background-size: 280px auto;
+  }
 
   @media (min-width: $tablet-width) and (max-width: 1339px) {
+    margin-bottom: 75px;
+    padding: 0;
     background: url("../../img/gift-tablet.jpg") top center no-repeat;
+    flex-direction: row;
+    gap: 264px;
+    min-height: 200px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../../img/gift-tablet@2x.jpg") top center no-repeat;
+      background-size: 707px auto;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+    width: 245px;
+    min-height: 288px;
+    background: url("../../img/gift-desktop.jpg") top center no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../../img/gift-desktop@2x.jpg") top center no-repeat;
+      background-size: 245px auto;
+    }
+  }
+}
+
+.other-products__gift::before {
+  content: "";
+  margin-top: 59px;
+  width: 78px;
+  height: 80px;
+  background-image: url("../../img/catalog/gift-icon.svg");
+
+  @media (min-width: $tablet-width) and (max-width: 1339px) {
+    margin-top: 0;
+    margin-left: 77px;
   }
 }
 
 .other-products__gift-text {
+  margin: 0;
+  width: 161px;
   color: #ffffff;
   text-align: center;
   font-family: "Lato", sans-serif;
   font-size: 16px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) and (max-width: 1339px) {
+    text-align: left;
+  }
 }

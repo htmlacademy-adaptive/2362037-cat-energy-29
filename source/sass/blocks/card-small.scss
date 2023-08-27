@@ -1,3 +1,66 @@
 .card-small {
-  padding: 13px 20px 19px 20px;
+  padding: 13px 0 19px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 38px 28px 38px;
+    border: 1px solid #cdcdcd;
+    border-bottom: none;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 15px 0 17px 0;
+    border: none;
+    border-top: 1px solid #cdcdcd;
+    grid-template-columns: 325px 305px 244px;
+    gap: 10px;
+    align-items: center;
+  }
+}
+
+.card-small__title {
+  margin: 0;
+  margin-bottom: 13px;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.card-small__description {
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+    justify-content: end;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    text-align: left;
+    justify-content: space-between;
+  }
+}
+
+.card-small__description dd {
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 90px;
+  }
+}
+
+.card-small__button {
+  @media (min-width: $tablet-width) and (max-width: 1339px) {
+    grid-column: 1/-1;
+  }
 }

@@ -1,3 +1,10 @@
+.logo {
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
+  }
+}
+
 .logo__text {
   position: absolute;
   top: 50%;

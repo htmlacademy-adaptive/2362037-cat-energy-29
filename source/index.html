@@ -11,9 +11,13 @@
     <div class="page-container">
       <header class="header">
         <div class="header__wrapper container">
-          <a href="#" class="header__logo logo">
-            <img class="logo__cat" src="img/logo-cat-mobile.svg" width="33" height="38" alt="Логотип">
-            <img class="logo__text" src="img/logo-text-mobile.svg" width="101" height="18" alt="Cat Energy">
+          <a href="#" class="header__logo">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/logo-cat-tablet.svg" width="174" height="50">
+
+              <img class="logo__cat logo" src="img/logo-cat-mobile.svg" width="33" height="38" alt="Логотип">
+              <img class="logo__text logo" src="img/logo-text-mobile.svg" width="101" height="18" alt="Cat Energy">
+            </picture>
           </a>
 
           <nav class="main-navigation main-navigation--opened main-navigation--nojs">
@@ -24,13 +28,13 @@
             <div class="main-navigation__wrapper container">
               <ul class="main-navigation__list">
               <li class="main-navigation__item">
-                <a class="main-navigation__link main-navigation__link--current">Главная</a>
+                <a class="main-navigation__link main-navigation__link--inverse main-navigation__link--current">Главная</a>
               </li>
               <li class="main-navigation__item">
-                <a class="main-navigation__link" href="catalog.html">Каталог продукции</a>
+                <a class="main-navigation__link main-navigation__link--inverse" href="catalog.html">Каталог продукции</a>
               </li>
               <li class="main-navigation__item">
-                <a class="main-navigation__link" href="form.html">Подбор программы</a>
+                <a class="main-navigation__link main-navigation__link--inverse" href="form.html">Подбор программы</a>
               </li>
               </ul>
             </div>
@@ -43,7 +47,12 @@
           <div class="hero__wrapper container">
             <h1 class="hero__title title">Функциональное питание для котов</h1>
             <p class="hero__text">Занялся собой? Займись котом!</p>
-            <img class="hero__img" src="img/hero-cup.png" width="280" height="270" alt="Стакан Cat Energy с курицей">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/hero-cup-desktop.png 1x, img/hero-cup-desktop@2x.png 2x" width="552" height="499">
+              <source media="(min-width: 768px)" srcset="img/hero-cup-tablet.jpg 1x, img/hero-cup-tablet@2x.jpg 2x" width="709" height="609">
+
+              <img class="hero__img" src="img/hero-cup-mobile.png" srcset="img/hero-cup-mobile@2x.png" width="280" height="270" alt="Стакан Cat Energy с курицей">
+            </picture>
             <a href="form.html" class="button button--hero">подобрать программу</a>
           </div>
         </section>
@@ -126,8 +135,15 @@
               <p class="example__expenses">Затраты на питание: <span>15 000 РУБ.</span></p>
             </div>
             <div class="example__slider">
-              <img src="img/cat-before.png" width="280" height="256">
-              <img src="img/cat-after.png" width="280" height="256">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/cat-before-tablet.png 1x, img/cat-before-tablet@2.png 2x">
+                <img src="img/cat-before-mobile.png" srcset="img/cat-before-mobile@2.png 2x" width="280" height="256">
+              </picture>
+
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/cat-after-tablet.png 1x, img/cat-after-tablet@2.png 2x">
+                <img src="img/cat-after-mobile.png" srcset="img/cat-after-mobile@2.png 2x" width="280" height="256">
+              </picture>
             </div>
           </div>
         </section>
@@ -135,10 +151,16 @@
         <section class="contacts">
           <h2 class="visually-hidden">Контакты</h2>
           <div class="contacts__wrapper container">
-            <p class="contacts__offer">Приглашаем <br>к сотрудничеству дилеров!</p>
-            <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <br><span>Санкт-Петербург</span></address>
+            <div class="contacts__wrapper-flex">
+              <p class="contacts__offer">Приглашаем <br>к сотрудничеству дилеров!</p>
+              <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <br><span>Санкт-Петербург</span></address>
+            </div>
           </div>
-          <img class="contacts__map" src="img/map-mobile.jpg" width="320" height="362">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/map-desktop.jpg" width="1440" height="400">
+            <source media="(min-width: 768px)" srcset="img/map-tablet.jpg" width="768" height="400">
+            <img class="contacts__map" src="img/map-mobile.jpg" width="320" height="362">
+          </picture>
         </section>
       </main>
 

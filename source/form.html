@@ -12,8 +12,12 @@
       <header class="header">
         <div class="header__wrapper container">
           <a href="#" class="header__logo logo">
-            <img class="logo__cat" src="img/logo-cat-mobile.svg" width="33" height="38" alt="Логотип">
-            <img class="logo__text" src="img/logo-text-mobile.svg" width="101" height="18" alt="Cat Energy">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/logo-cat-tablet.svg" width="174" height="50">
+
+              <img class="logo__cat logo" src="img/logo-cat-mobile.svg" width="33" height="38" alt="Логотип">
+              <img class="logo__text logo" src="img/logo-text-mobile.svg" width="101" height="18" alt="Cat Energy">
+            </picture>
           </a>
 
           <nav class="main-navigation main-navigation--opened main-navigation--nojs">
@@ -24,10 +28,10 @@
             <div class="main-navigation__wrapper container">
               <ul class="main-navigation__list">
               <li class="main-navigation__item">
-                <a class="main-navigation__link">Главная</a>
+                <a class="main-navigation__link main-navigation__link--current">Главная</a>
               </li>
               <li class="main-navigation__item">
-                <a class="main-navigation__link main-navigation__link--current" href="catalog.html">Каталог продукции</a>
+                <a class="main-navigation__link" href="catalog.html">Каталог продукции</a>
               </li>
               <li class="main-navigation__item">
                 <a class="main-navigation__link" href="form.html">Подбор программы</a>
@@ -48,7 +52,7 @@
 
         <form class="form" action="https://echo.htmlacademy.ru/" method="post">
 
-            <div class="form__wrapper-grid">
+            <div class="form__wrapper-grid container">
 
               <div class="form-group__wrapper-cat container">
                 <fildset class="form-group">
@@ -101,62 +105,70 @@
 
             </div>
 
-            <div class="form-group__wrapper-contacts container">
               <fildset class="form-group">
-                <legend class="form-group__title-contacts title-secondary">Контактные данные (владельца кота)</legend>
+                <div class="title-wrapper">
+                  <legend class="form-group__title-contacts title-secondary">Контактные данные (владельца кота)</legend>
+                </div>
 
-                <ul class="form-group__inputs contacts-grid">
-                  <li class="form-group__item form-group__item-grid">
-                    <label class="form-group__label" for="email">E-mail:*</label>
-                    <input class="form-group__input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
-                  </li>
+                <div class="form-group__wrapper-contacts container">
+                  <ul class="form-group__inputs contacts-grid">
+                    <li class="form-group__item form-group__item-grid">
+                      <label class="form-group__label" for="email">E-mail:*</label>
+                      <input class="form-group__input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+                    </li>
 
-                  <li class="form-group__item form-group__item-grid">
-                    <label class="form-group__label" for="tel">Телефон:*</label>
-                    <input class="form-group__input" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90" required>
-                  </li>
-                </ul>
+                    <li class="form-group__item form-group__item-grid">
+                      <label class="form-group__label" for="tel">Телефон:*</label>
+                      <input class="form-group__input" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90" required>
+                    </li>
+                  </ul>
+                </div>
               </fildset>
-            </div>
 
-            <div class="form-group__wrapper-comment container">
               <fildset class="form-group">
-                <legend class="form-group__title-comment title-secondary">Комментарий</legend>
-                <textarea class="form-group__comment" name="comment" id="comment-form">Расскажите обо всех повадках кота</textarea>
-              </fildset>
-            </div>
+                <div class="title-wrapper">
+                  <legend class="form-group__title-comment title-secondary">Комментарий</legend>
+                </div>
 
-            <div class="form-group__wrapper-add container">
-              <fildset class="form-group">
-                <legend class="form-group__title-add title-secondary">Дополнительно</legend>
-                <ul class="form-group__checkbox-inputs">
-                  <li class="form-group__item">
-                    <label class="form-group__checkbox-label">
-                      <input class="form-group__checkbox-input" type="checkbox" name="sweetener" checked>
-                      Сахарозаменитель
-                    </label>
-                  </li>
-                  <li class="form-group__item">
-                    <label class="form-group__checkbox-label">
-                      <input class="form-group__checkbox-input" type="checkbox" name="water">
-                      Питьевая вода
-                    </label>
-                  </li>
-                  <li class="form-group__item">
-                    <label class="form-group__checkbox-label">
-                      <input class="form-group__checkbox-input" type="checkbox" name="milk">
-                      Молоко
-                    </label>
-                  </li>
-                  <li class="form-group__item">
-                    <label class="form-group__checkbox-label">
-                      <input class="form-group__checkbox-input" type="checkbox" name="vitamins">
-                      Витамины
-                    </label>
-                  </li>
-                </ul>
+                <div class="form-group__wrapper-comment container">
+                  <textarea class="form-group__comment" name="comment" id="comment-form">Расскажите обо всех повадках кота</textarea>
+                </div>
               </fildset>
-            </div>
+
+              <fildset class="form-group">
+                <div class="title-wrapper">
+                  <legend class="form-group__title-add title-secondary">Дополнительно</legend>
+                </div>
+
+                <div class="form-group__wrapper-add container">
+                  <ul class="form-group__checkbox-inputs">
+                    <li class="form-group__item">
+                      <label class="form-group__checkbox-label">
+                        <input class="form-group__checkbox-input" type="checkbox" name="sweetener" checked>
+                        Сахарозаменитель
+                      </label>
+                    </li>
+                    <li class="form-group__item">
+                      <label class="form-group__checkbox-label">
+                        <input class="form-group__checkbox-input" type="checkbox" name="water">
+                        Питьевая вода
+                      </label>
+                    </li>
+                    <li class="form-group__item">
+                      <label class="form-group__checkbox-label">
+                        <input class="form-group__checkbox-input" type="checkbox" name="milk">
+                        Молоко
+                      </label>
+                    </li>
+                    <li class="form-group__item">
+                      <label class="form-group__checkbox-label">
+                        <input class="form-group__checkbox-input" type="checkbox" name="vitamins">
+                        Витамины
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </fildset>
 
             <div class="form__wrapper-button container">
               <button class="button button--form" type="submit">отправить заявку</button>
@@ -168,10 +180,16 @@
         <section class="contacts">
           <h2 class="visually-hidden">Контакты</h2>
           <div class="contacts__wrapper contacts--background container">
-            <p class="contacts__offer">Приглашаем <br>к сотрудничеству дилеров!</p>
-            <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <br><span>Санкт-Петербург</span></address>
+            <div class="contacts__wrapper-flex">
+              <p class="contacts__offer">Приглашаем <br>к сотрудничеству дилеров!</p>
+              <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <br><span>Санкт-Петербург</span></address>
+            </div>
           </div>
-          <img class="contacts__map" src="img/map-mobile.jpg" width="320" height="362">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/map-desktop.jpg" width="1440" height="400">
+            <source media="(min-width: 768px)" srcset="img/map-tablet.jpg" width="768" height="400">
+            <img class="contacts__map" src="img/map-mobile.jpg" width="320" height="362">
+          </picture>
         </section>
       </main>
 

@@ -1,5 +1,8 @@
 .form__wrapper-grid {
+  margin: 0 auto;
+
   @media (min-width: $desktop-width) {
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 110px 570px 80px 570px 110px;
   }
@@ -14,6 +17,10 @@
     display: flex;
     align-items: center;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px 80px 110px;
+  }
 }
 
 .form__note {
@@ -23,6 +30,11 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    margin-left: 64px;
     text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
   }
 }

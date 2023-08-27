@@ -1,7 +1,10 @@
+.footer {
+  background-color: #f2f2f2;
+}
+
 .footer__wrapper {
   margin: 0 auto;
   padding: 40px 20px;
-  background-color: #f2f2f2;
 
   @media (min-width: $tablet-width) {
     padding: 55px 30px;
