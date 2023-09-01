@@ -63,6 +63,14 @@
   }
 }
 
+.main-navigation__link:hover {
+  opacity: 0.6;
+}
+
+.main-navigation__link:active {
+  opacity: 0.3;
+}
+
 .main-navigation__link--inverse {
   @media (min-width: $desktop-width) {
     color: #ffffff;
@@ -90,10 +98,18 @@
   }
 }
 
-.main-navigation__link--inverse + .main-navigation__link--current::after {
+.main-navigation__link--inverse.main-navigation__link--current::after {
   @media (min-width: $desktop-width) {
     background-color: #ffffff;
   }
+}
+
+.main-navigation__link--current:hover {
+  opacity: 1;
+}
+
+.main-navigation__link--current:active {
+  opacity: 1;
 }
 
 .main-navigation--nojs {

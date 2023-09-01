@@ -115,6 +115,10 @@
   padding-right: 48px;
 }
 
+.programs__link:active {
+  opacity: 0.3;
+}
+
 .programs__icon {
   margin-right: 20px;
   width: 50px;
@@ -144,8 +148,6 @@
 .small-cat-icon {
   position: relative;
   bottom: 3px;
-  width: 36px;
-  height: 50px;
 
   @media (min-width: $tablet-width) {
     bottom: 17px;
@@ -164,8 +166,6 @@
   position: relative;
   top: 11px;
   left: -8px;
-  width: 67px;
-  height: 28px;
 
   @media (min-width: $tablet-width) {
     top: 44px;
