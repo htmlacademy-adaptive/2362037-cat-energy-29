@@ -17,3 +17,16 @@
   display: flex;
   justify-content: space-between;
 }
+
+.socials__icon {
+  fill: #666666;
+}
+
+.socials__icon:hover {
+  fill: #68b738;
+}
+
+.socials__icon:active {
+  fill: #68b738;
+  opacity: 0.3;
+}
