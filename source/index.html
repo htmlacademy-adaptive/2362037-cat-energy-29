@@ -8,7 +8,7 @@
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png"> <!-- 180×180 -->
     <link rel="manifest" href="manifest.webmanifest">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
 
   <body>
@@ -53,9 +53,9 @@
             <p class="hero__text">Занялся собой? Займись котом!</p>
             <picture>
               <source media="(min-width: 1440px)" type="image/webp" srcset="img/hero-cup-desktop.webp 1x, img/hero-cup-desktop@2x.webp 2x" width="552" height="499">
-              <source media="(min-width: 768px)" srcset="img/hero-cup-tablet.jpg 1x, img/hero-cup-tablet@2x.jpg 2x" width="709" height="609">
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/hero-cup-tablet.webp 1x, img/hero-cup-tablet@2x.webp 2x" width="709" height="609">
 
-              <img class="hero__img" src="img/hero-cup-mobile.png" srcset="img/hero-cup-mobile@2x.png" width="280" height="270" alt="Стакан Cat Energy с курицей">
+              <img class="hero__img" type="image/webp" src="img/hero-cup-mobile.webp" srcset="img/hero-cup-mobile@2x.webp" width="280" height="270" alt="Стакан Cat Energy с курицей">
             </picture>
             <a href="form.html" class="button button--hero">подобрать программу</a>
           </div>
@@ -152,13 +152,17 @@
             </div>
             <div class="example__slider">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/cat-before-tablet.png 1x, img/cat-before-tablet@2.png 2x">
-                <img src="img/cat-before-mobile.png" srcset="img/cat-before-mobile@2.png 2x" width="280" height="256">
+                <source media="(min-width: 768px)" srcset="img/cat-before-tablet.webp 1x, img/cat-before-tablet@2x.webp 2x">
+                <img src="img/cat-before-mobile.webp" srcset="img/cat-before-mobile@2x.webp 2x" width="280" height="256">
               </picture>
 
+              <svg class="curtain" width="40" height="256">
+                <use href="img/sprite.svg#curtain"></use>
+              </svg>
+
               <picture>
-                <source media="(min-width: 768px)" srcset="img/cat-after-tablet.png 1x, img/cat-after-tablet@2.png 2x">
-                <img src="img/cat-after-mobile.png" srcset="img/cat-after-mobile@2.png 2x" width="280" height="256">
+                <source media="(min-width: 768px)" srcset="img/cat-after-tablet.webp 1x, img/cat-after-tablet@2x.webp 2x">
+                <img src="img/cat-after-mobile.webp" srcset="img/cat-after-mobile@2x.webp 2x" width="280" height="256">
               </picture>
             </div>
           </div>
@@ -172,12 +176,9 @@
               <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <br><span>Санкт-Петербург</span></address>
             </div>
           </div>
-          <picture>
-            <source media="(min-width: 1440px)" srcset="img/map-desktop.jpg" width="1440" height="400">
-            <source media="(min-width: 768px)" srcset="img/map-tablet.jpg" width="768" height="400">
-            <img class="contacts__map" src="img/map-mobile.jpg" width="320" height="362">
-          </picture>
-        </section>
+
+          <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257197793!2d30.320472476757534!3d59.93871916209421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1694257773273!5m2!1sru!2sru&iwloc=near" width="320" height="362" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
       </main>
 
       <footer class="footer">
@@ -222,6 +223,6 @@
       </footer>
     </div>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
