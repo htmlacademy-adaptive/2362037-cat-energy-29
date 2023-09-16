@@ -10,16 +10,17 @@
 
 .form__wrapper-button {
   margin: 0 auto;
-  padding: 0 20px 32px 0;
+  padding-top: 40px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 70px 60px 70px;
+    padding: 0;
+    padding-top: 17px;
     display: flex;
     align-items: center;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 110px 80px 110px;
+    padding-top: 26px;
   }
 }
 
@@ -27,11 +28,16 @@
   margin: 0;
   margin-top: 21px;
   text-align: center;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "Lato", sans-serif;
+  color: #000000;
 
   @media (min-width: $tablet-width) {
     margin: 0;
     margin-left: 64px;
     text-align: left;
+    font-size: 16px;
   }
 
   @media (min-width: $desktop-width) {

@@ -28,7 +28,8 @@
   background-color: #f2f2f2;
 
   @media (min-width: $tablet-width) {
-    padding: 77px 63px 57px 52px;
+    margin-bottom: 30px;
+    padding: 75px 63px 57px 52px;
   }
 
   @media (min-width: $desktop-width) {
@@ -58,29 +59,39 @@
     line-height: 36px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     margin-bottom: 73px;
     padding-top: 30px;
+    padding-left: 162px;
   }
 }
 
 .programs__description {
-  margin-bottom: 15px;
+  margin-bottom: 19px;
   padding-bottom: 23px;
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 33px;
     border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 8px;
   }
 }
 
 .programs__link {
   position: relative;
-  padding: 4px 40px 4px 0;
+  padding-right: 40px;
   text-decoration: none;
   color: #000000;
   line-height: 16px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 48px;
+  }
 }
 
 .narrow {
@@ -120,6 +131,7 @@
 }
 
 .programs__icon {
+  margin-top: -6px;
   margin-right: 20px;
   width: 50px;
   height: 50px;
@@ -129,6 +141,7 @@
   float: left;
 
   @media (min-width: $tablet-width) {
+    margin-top: 15px;
     margin-right: 0;
     margin-left: 53px;
     width: 200px;
@@ -137,6 +150,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 0;
     margin-right: 62px;
     margin-left: 0;
     width: 100px;
@@ -150,13 +164,13 @@
   bottom: 3px;
 
   @media (min-width: $tablet-width) {
-    bottom: 17px;
+    bottom: 11px;
     width: 140px;
     height: 194px;
   }
 
   @media (min-width: $desktop-width) {
-    bottom: 9px;
+    bottom: 6px;
     width: 70px;
     height: 97px;
   }
@@ -169,14 +183,14 @@
 
   @media (min-width: $tablet-width) {
     top: 44px;
-    left: -34px;
+    left: -30px;
     width: 269px;
     height: 113px;
   }
 
   @media (min-width: $desktop-width) {
     top: 20px;
-    left: -19px;
+    left: -17px;
     width: 134px;
     height: 56px;
   }

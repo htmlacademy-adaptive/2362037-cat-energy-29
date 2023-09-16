@@ -1,0 +1,76 @@
+.slider__wrapper {
+  --currentColor: #666666;
+  margin: 0 auto;
+  position: relative;
+  width: 280px;
+  height: 256px;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
+  }
+}
+
+.slider__after,
+.slider__before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider__before {
+  z-index: 2;
+  width: 50%;
+  background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient(to top, #f2f2f2, 371px, #ffffff 371px);
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient(to top, #f2f2f2 382px, #ffffff 382px);
+  }
+}
+
+.slider__curtain {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+.curtain-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  fill: #ffffff;
+}
+
+.slider__curtain-button {
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.curtain {
+  height: 256px;
+
+  @media (min-width: $tablet-width) {
+    height: 512px;
+  }
+}
+
+.slider__curtain-button:hover {
+  --currentColor: #68b738;
+}
+
+.curtain:active {
+  opacity: 0.6;
+}

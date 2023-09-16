@@ -6,14 +6,16 @@
 
 .advantages__wrapper {
   margin: 0 auto;
-  padding: 20px 20px 49px 20px;
+  padding: 22px 20px 49px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 45px 30px 47px 30px;
+    padding: 45px 30px 8px 30px;
+    border-bottom: 1px solid #e6e6e6;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 71px 110px 69px 110px;
+    padding: 71px 110px 0 110px;
+    border-bottom: none;
   }
 }
 
@@ -39,12 +41,13 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 354px 354px;
+    grid-template-columns: 384px 324px;
     counter-reset: counter 0;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 }
@@ -57,6 +60,7 @@
   gap: 20px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 38px;
     padding: 40px 26px 57px 0;
     display: block;
     width: 250px;
