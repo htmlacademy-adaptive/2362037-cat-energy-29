@@ -4,14 +4,12 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    width: 436px;
     font-size: 18px;
     line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 8px;
     width: 476px;
     font-size: 20px;
     line-height: 1;
@@ -38,13 +36,20 @@
 .main-navigation__list {
   margin: 0;
   padding: 0;
+  width: 320px;
   list-style: none;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     margin-left: auto;
+    width: 436px;
     display: flex;
-    gap: 33px;
+    flex-wrap: wrap;
+    gap: 5px 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 478px;
   }
 }
 
@@ -141,6 +146,7 @@
   @media (min-width: $tablet-width) {
     position: static;
     background-color: transparent;
+    display: inline-block;
   }
 }
 

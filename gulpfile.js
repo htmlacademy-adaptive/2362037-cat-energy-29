@@ -9,6 +9,8 @@ import rename from 'gulp-rename';
 import { deleteAsync } from 'del';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
+import htmlmin from 'gulp-htmlmin';
+import terser from "gulp-terser";
 
 // Styles
 
@@ -25,7 +27,21 @@ export const styles = () => {
     .pipe(browser.stream());
 }
 
-//Images
+//HTML
+
+const html = () => {
+  return gulp.src('source/*.html')
+  .pipe(htmlmin({ collapseWhitespace: true }))
+  .pipe(gulp.dest('build/'));
+}
+
+//JS
+
+const scripts = () => {
+  return gulp.src('source/js/*.js')
+  .pipe(terser())
+  .pipe(gulp.dest('build/js'));
+}
 
 // Images
 
@@ -66,8 +82,6 @@ const copy = (done) => {
     'source/img/favicons/favicon.svg',
     'source/img/favicons/manifest.json',
     'source/*.ico',
-    'source/js/*.js',
-    'source/*.html',
     'source/img/sprite.svg'
   ], {
     base: 'source'
@@ -118,6 +132,8 @@ export const build = gulp.series(
   optimizeImages,
   gulp.parallel(
     styles,
+    html,
+    scripts,
     createWebp,
     svg
   )
@@ -130,6 +146,8 @@ export default gulp.series(
   copy,
   gulp.parallel(
     styles,
+    html,
+    scripts,
     createWebp,
     svg
   ),

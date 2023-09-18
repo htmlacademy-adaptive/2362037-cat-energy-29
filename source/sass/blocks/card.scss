@@ -1,5 +1,5 @@
 .card {
-  padding: 10px 20px 25px 20px;
+  padding: 20px 20px 25px 20px;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -20,8 +20,12 @@
   float: left;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 22px;
+    margin-bottom: 17px;
     float: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 7px;
   }
 }
 
@@ -34,6 +38,7 @@
   margin-bottom: 14px;
   padding-right: 54px;
   color: #222222;
+  font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
@@ -62,6 +67,10 @@
     font-size: 16px;
     line-height: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 37px;
+  }
 }
 
 .card__description dt {
@@ -83,6 +92,7 @@
 }
 
 .card--more {
+  padding: 25px 20px;
   text-align: center;
   border-bottom: 1px solid #ebebeb;
 
@@ -133,10 +143,13 @@
   margin-bottom: 21px;
   width: 100%;
   text-align: center;
+  font-size: 12px;
+  line-height: 16px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 82px;
     padding: 0 40px;
+    font-size: 16px;
     line-height: 18px;
   }
 

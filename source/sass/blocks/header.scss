@@ -4,7 +4,7 @@
 
 .header__wrapper {
   margin: 0 auto;
-  padding: 14px 20px;
+  padding: 13px 21px 14px 20px;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -21,5 +21,9 @@
 }
 
 .header__logo {
-  height: 50px;
+  height: auto;
+
+  @media (min-width: $tablet-width) {
+    height: 50px;
+  }
 }

@@ -13,7 +13,7 @@
     padding: 15px 0 17px 0;
     border: none;
     border-top: 1px solid #cdcdcd;
-    grid-template-columns: 325px 305px 244px;
+    grid-template-columns: 317px 314px 244px;
     gap: 10px;
     align-items: center;
   }
@@ -21,7 +21,7 @@
 
 .card-small__title {
   margin: 0;
-  margin-bottom: 13px;
+  margin-bottom: 10px;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -31,6 +31,10 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -55,7 +59,7 @@
 .card-small__description dd {
   @media (min-width: $tablet-width) {
     margin: 0;
-    width: 90px;
+    width: 73px;
   }
 }
 

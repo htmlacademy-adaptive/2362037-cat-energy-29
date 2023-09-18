@@ -8,6 +8,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 15px;
     padding: 0 110px;
     display: flex;
   }
@@ -34,10 +35,12 @@
 
 .other-products__title {
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 34px;
+  max-width: 226px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 80px;
+    max-width: 339px;
   }
 }
 

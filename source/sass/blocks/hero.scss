@@ -43,8 +43,8 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 82px;
-    padding: 224px 110px 0 110px;
-    min-height: 694px;
+    padding: 245px 110px 0 110px;
+    min-height: 715px;
   }
 }
 
@@ -92,8 +92,8 @@
 
 .hero__img {
   @media (min-width: $tablet-width) {
+    margin-bottom: -80px;
     position: relative;
-    left: 23px;
     top: -80px;
     display: block;
     width: 709px;
@@ -104,7 +104,7 @@
     position: absolute;
     width: 552px;
     height: 499px;
-    top: 143px;
+    top: 164px;
     left: 557px;
   }
 }

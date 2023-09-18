@@ -5,11 +5,11 @@
   padding: 0 20px 24px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 70px 65px 70px;
+    padding: 0 70px 75px 70px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 0 70px 0;
+    padding: 0;
     width: 570px;
     grid-column: 2/3;
   }
@@ -23,16 +23,21 @@
 
 .form-group__item {
   position: relative;
-  margin-bottom: 25px;
+  margin-bottom: 14px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .form-group__item:last-child {
-  margin-bottom: 0;
+  @media (max-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .form-group__item-grid {
-  margin-bottom: 14px;
   display: grid;
   grid-template-columns: max-content 1fr;
   gap: 13px;
@@ -40,9 +45,13 @@
 }
 
 .form-group__input {
-  padding: 14px 15px 13px 15px;
+  padding: 10px 15px 9px 15px;
   min-width: 173px;
   border: 1px solid #e7e7e7;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 20px 9px 20px;
+  }
 }
 
 .form-group__input:focus {
@@ -59,6 +68,11 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1;
+  }
 }
 
 //Выбор программы (радио-кнопки)
@@ -66,7 +80,7 @@
 .form-group__wrapper-programms {
   margin: 0 auto;
   margin-bottom: 26px;
-  padding: 22px 20px 19px 20px;
+  padding: 28px 20px 25px 20px;
   width: 320px;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
@@ -74,15 +88,30 @@
   @media (min-width: $tablet-width) {
     margin: 0 auto;
     margin-bottom: 65px;
-    padding: 23px 27px 27px 27px;
+    padding: 28px 27px 32px 27px;
     width: 628px;
     border: 1px solid #d9d9d9;
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
     width: 570px;
     grid-column: 4/5;
   }
+}
+
+.form-group__item-radio {
+  margin-bottom: 20px;
+  position: relative;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
+  }
+}
+
+.form-group__item-radio:last-child {
+  margin-bottom: 0;
 }
 
 .form-group__radio-label {
@@ -140,7 +169,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 110px 70px 110px;
+    padding: 0 110px 51px 110px;
   }
 }
 
@@ -207,14 +236,14 @@
   margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 87px;
+    margin-bottom: 78px;
   }
 }
 
 .form-group__comment {
   padding: 14px;
   width: 100%;
-  min-height: 150px;
+  min-height: 148px;
   border: 1px solid #e7e7e7;
   color: #444444;
   font-family: "Oswald", sans-serif;
@@ -223,7 +252,14 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    padding: 11px 20px;
     min-height: 175px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 8px 20px;
   }
 }
 
@@ -231,34 +267,37 @@
 
 .form-group__wrapper-add {
   margin: 0 auto;
-  padding: 0 20px 24px 20px;
+  padding: 0 20px 32px 20px;
 
   @media (min-width: $tablet-width) {
     padding: 0 70px 65px 70px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 110px 70px 110px;
+    padding: 0 110px 82px 110px;
   }
 }
 
 .form-group__title-add {
-  margin-bottom: 34px;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 57px;
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 60px;
   }
 }
 
 .form-group__checkbox-inputs {
   margin: 0;
   padding: 0;
-  padding-bottom: 20px;
   list-style: none;
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 353px 1fr;
+    grid-template-columns: 344px 1fr;
   }
 
   @media (min-width: $desktop-width) {
@@ -268,23 +307,46 @@
   }
 }
 
+.form-group__item-checkbox {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 42px;
+  }
+}
+
 .form-group__checkbox-label {
   padding-left: 45px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+  }
 }
 
 .form-group__checkbox-input[type="checkbox"] {
   margin: 0;
   appearance: none;
   position: absolute;
-  top: 0;
+  top: -4px;
   left: 0;
   width: 30px;
   height: 30px;
   border: 1px solid #cdcdcd;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .form-group__checkbox-input[type="checkbox"]:checked {
   background: url("../../img/sprite.svg#checkbox") center no-repeat;
+  background-size: 18px 14px;
+
+  @media (min-width: $tablet-width) {
+    background-size: 24px 19px;
+  }
 }

@@ -7,7 +7,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 93px 110px 66px 110px;
+    padding: 80px 110px 66px 110px;
   }
 }
 
@@ -15,6 +15,10 @@
   margin: 0;
   margin-bottom: 37px;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+  }
 }
 
 .form-header__text {

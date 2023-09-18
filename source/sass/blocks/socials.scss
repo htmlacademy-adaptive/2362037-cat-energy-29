@@ -3,9 +3,20 @@
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
-    margin: 0 auto;
     padding: 0;
     border-bottom: none;
+  }
+}
+
+.footer__socials {
+  @media (min-width: $tablet-width) {
+    margin-left: 160px;
+    margin-right: 125px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 416px;
+    margin-right: 376px;
   }
 }
 
@@ -15,6 +26,7 @@
   width: 132px;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 

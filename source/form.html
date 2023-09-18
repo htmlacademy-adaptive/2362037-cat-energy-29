@@ -29,7 +29,7 @@
               <span class="visually-hidden">Открыть меню</span>
             </button>
 
-            <div class="main-navigation__wrapper container">
+            <div class="main-navigation__wrapper">
               <ul class="main-navigation__list">
               <li class="main-navigation__item">
                 <a class="main-navigation__link" href="index.html">Главная</a>
@@ -38,7 +38,7 @@
                 <a class="main-navigation__link" href="catalog.html">Каталог продукции</a>
               </li>
               <li class="main-navigation__item">
-                <a class="main-navigation__link main-navigation__link--current"">Подбор программы</a>
+                <a class="main-navigation__link main-navigation__link--current">Подбор программы</a>
               </li>
               </ul>
             </div>
@@ -50,7 +50,7 @@
         <section class="form-header">
           <div class="form-header__wrapper container">
             <h1 class="form-header__title title">Подбор программы</h1>
-            <p class="form-header__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+            <p class="form-header__text">Заполните анкету, и мы подберем <br>программу питания для вашего кота</p>
           </div>
         </section>
 
@@ -85,19 +85,19 @@
                 <fildset class="form-group">
                   <legend class="form-group__title visually-hidden">Выбор программы</legend>
                   <ul class="form-group__inputs">
-                    <li class="form-group__item">
+                    <li class="form-group__item-radio">
                       <label class="form-group__radio-label">
                         <input class="form-group__radio-input" type="radio" name="program" value="weight-loss" checked>
                         Похудение
                       </label>
                     </li>
-                    <li class="form-group__item">
+                    <li class="form-group__item-radio">
                       <label class="form-group__radio-label">
                         <input class="form-group__radio-input" type="radio" name="program" value="weight-gain">
                         Набор массы
                       </label>
                     </li>
-                    <li class="form-group__item">
+                    <li class="form-group__item-radio">
                       <label class="form-group__radio-label">
                         <input class="form-group__radio-input" type="radio" name="program" value="need-advice">
                         Не знаю (Нужен ваш совет)
@@ -146,38 +146,37 @@
 
                 <div class="form-group__wrapper-add container">
                   <ul class="form-group__checkbox-inputs">
-                    <li class="form-group__item">
+                    <li class="form-group__item-checkbox">
                       <label class="form-group__checkbox-label">
                         <input class="form-group__checkbox-input" type="checkbox" name="sweetener" checked>
                         Сахарозаменитель
                       </label>
                     </li>
-                    <li class="form-group__item">
+                    <li class="form-group__item-checkbox">
                       <label class="form-group__checkbox-label">
                         <input class="form-group__checkbox-input" type="checkbox" name="water">
                         Питьевая вода
                       </label>
                     </li>
-                    <li class="form-group__item">
+                    <li class="form-group__item-checkbox">
                       <label class="form-group__checkbox-label">
                         <input class="form-group__checkbox-input" type="checkbox" name="milk">
                         Молоко
                       </label>
                     </li>
-                    <li class="form-group__item">
+                    <li class="form-group__item-checkbox">
                       <label class="form-group__checkbox-label">
                         <input class="form-group__checkbox-input" type="checkbox" name="vitamins">
                         Витамины
                       </label>
                     </li>
                   </ul>
+                  <div class="form__wrapper-button">
+                    <button class="button button--form" type="submit">отправить заявку</button>
+                    <p class="form__note">* — Обязательные поля</p>
+                  </div>
                 </div>
               </fildset>
-
-            <div class="form__wrapper-button container">
-              <button class="button button--form" type="submit">отправить заявку</button>
-              <p class="form__note">* — Обязательные поля</p>
-            </div>
 
         </form>
 
@@ -192,32 +191,33 @@
 
           <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257197793!2d30.320472476757534!3d59.93871916209421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1694257773273!5m2!1sru!2sru&iwloc=near" width="320" height="362" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
           </iframe>
+        </section>
       </main>
 
       <footer class="footer">
         <div class="footer__wrapper container">
           <div class="footer__logo">
-            <img src="img/footer-logo.svg" alt="Логотип Cat Enegry.">
+            <img src="img/footer-logo.svg" width="128" height="24" alt="Логотип Cat Enegry.">
           </div>
-          <div class="socials">
+          <div class="socials footer__socials">
             <ul class="socials__list">
               <li class="socials__item">
                 <a href="#">
-                  <svg class="socials__icon" width="28" height="22" alt="Ссылка на страницу Вконтакте.">
+                  <svg class="socials__icon" width="28" height="22" aria-label="Ссылка на страницу Вконтакте.">
                     <use href="img/sprite.svg#vkontakte-icon"></use>
                   </svg>
                 </a>
               </li>
               <li class="socials__item">
                 <a href="#">
-                  <svg class="socials__icon" width="28" height="22" alt="Ссылка на канал Youtube.">
+                  <svg class="socials__icon" width="28" height="22" aria-label="Ссылка на канал Youtube.">
                     <use href="img/sprite.svg#youtube-icon"></use>
                   </svg>
                 </a>
               </li>
               <li class="socials__item">
                 <a href="#">
-                  <svg class="socials__icon" width="28" height="22" alt="Ссылка на телеграм-канал.">
+                  <svg class="socials__icon" width="28" height="22" aria-label="Ссылка на телеграм-канал.">
                     <use href="img/sprite.svg#telegram-icon"></use>
                   </svg>
                 </a>
@@ -227,7 +227,7 @@
           <div class="footer__academy-logo">
             <a class="footer__academy-logo-link" href="https://up.htmlacademy.ru">HTML Academy</a>
             <a class="footer__academy-logo-link" href="https://up.htmlacademy.ru">
-              <svg class="footer__academy-logo-icon" width="27" height="34" alt="Логотип HTML Academy.">
+              <svg class="footer__academy-logo-icon" width="27" height="34" aria-label="Логотип HTML Academy.">
                 <use href="img/sprite.svg#html-academy-logo"></use>
               </svg>
             </a>
