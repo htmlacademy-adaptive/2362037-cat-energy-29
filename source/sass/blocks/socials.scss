@@ -34,7 +34,8 @@
   fill: #666666;
 }
 
-.socials__icon:hover {
+.socials__icon:hover,
+.socials__icon:focus {
   fill: #68b738;
 }
 

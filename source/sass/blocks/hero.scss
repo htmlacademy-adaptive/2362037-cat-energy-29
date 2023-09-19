@@ -15,7 +15,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -130px;
     min-height: 694px;
     background-image: url("../../img/hero-background-desktop.webp"), linear-gradient(to right, #ffffff 50%, #64a73c 50%);
     background-position: bottom right;
@@ -43,8 +42,8 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 82px;
-    padding: 245px 110px 0 110px;
-    min-height: 715px;
+    padding: 224px 110px 0 110px;
+    min-height: 694px;
   }
 }
 
@@ -104,7 +103,7 @@
     position: absolute;
     width: 552px;
     height: 499px;
-    top: 164px;
+    top: 143px;
     left: 557px;
   }
 }
