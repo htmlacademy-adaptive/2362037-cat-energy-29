@@ -1,6 +1,13 @@
 .logo {
+  position: relative;
+  padding: 13px 21px 14px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    height: 50px;
+  }
+
   @media (min-width: $desktop-width) {
-    width: 202px;
     height: 59px;
   }
 }
@@ -11,6 +18,13 @@
 
 .logo:active {
   opacity: 0.6;
+}
+
+.logo__cat {
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
+  }
 }
 
 .logo__text {

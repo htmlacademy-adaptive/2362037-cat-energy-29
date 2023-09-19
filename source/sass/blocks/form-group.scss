@@ -1,20 +1,5 @@
 //Данные о коте
 
-.form-group__wrapper-cat {
-  margin: 0 auto;
-  padding: 0 20px 24px 20px;
-
-  @media (min-width: $tablet-width) {
-    padding: 0 70px 75px 70px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0;
-    width: 570px;
-    grid-column: 2/3;
-  }
-}
-
 .form-group__inputs {
   margin: 0;
   padding: 0;
@@ -77,31 +62,8 @@
 
 //Выбор программы (радио-кнопки)
 
-.form-group__wrapper-programms {
-  margin: 0 auto;
-  margin-bottom: 26px;
-  padding: 28px 20px 25px 20px;
-  width: 320px;
-  border-top: 1px solid #d9d9d9;
-  border-bottom: 1px solid #d9d9d9;
-
-  @media (min-width: $tablet-width) {
-    margin: 0 auto;
-    margin-bottom: 65px;
-    padding: 28px 27px 32px 27px;
-    width: 628px;
-    border: 1px solid #d9d9d9;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 69px;
-    width: 570px;
-    grid-column: 4/5;
-  }
-}
-
 .form-group__item-radio {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   position: relative;
   text-transform: uppercase;
 
@@ -160,19 +122,6 @@
 
 //Контакты владельца
 
-.form-group__wrapper-contacts {
-  margin: 0 auto;
-  padding: 0 20px 24px 20px;
-
-  @media (min-width: $tablet-width) {
-    padding: 0 70px 65px 70px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0 110px 51px 110px;
-  }
-}
-
 .form-group__title-contacts {
   margin-bottom: 35px;
 
@@ -219,19 +168,6 @@
 
 //Комментарий
 
-.form-group__wrapper-comment {
-  margin: 0 auto;
-  padding: 0 20px 24px 20px;
-
-  @media (min-width: $tablet-width) {
-    padding: 0 70px 65px 70px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0 110px 70px 110px;
-  }
-}
-
 .form-group__title-comment {
   margin-bottom: 38px;
 
@@ -250,6 +186,7 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  resize: none;
 
   @media (min-width: $tablet-width) {
     padding: 11px 20px;
@@ -263,20 +200,15 @@
   }
 }
 
-//Дополнительно (чекбоксы)
-
-.form-group__wrapper-add {
-  margin: 0 auto;
-  padding: 0 20px 32px 20px;
-
-  @media (min-width: $tablet-width) {
-    padding: 0 70px 65px 70px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0 110px 82px 110px;
-  }
+.form-group__comment[placeholder] {
+  color: #444444;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
 }
+
+//Дополнительно (чекбоксы)
 
 .form-group__title-add {
   margin-bottom: 40px;
@@ -308,7 +240,7 @@
 }
 
 .form-group__item-checkbox {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
