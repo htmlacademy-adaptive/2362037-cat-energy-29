@@ -7,7 +7,7 @@
     <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png"> <!-- 180×180 -->
-    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="manifest" href="img/favicons/manifest.webmanifest">
     <link href="css/style.min.css" rel="stylesheet">
     <link rel="preload" href="/css/style.min.css" as="style">
     <link rel="preload" href="/js/script.min.js" as="script">
@@ -21,16 +21,18 @@
     <div class="page-container">
       <header class="header">
         <div class="header__wrapper container">
-          <a href="#" class="header__logo">
-            <picture>
-              <source media="(min-width: 768px)" srcset="img/logo-cat-tablet.svg" width="174" height="50" alt="Логотип Cat Energy">
 
-              <img class="logo__cat logo" src="img/logo-cat-mobile.svg" width="33" height="38" alt="Логотип">
-              <img class="logo__text logo" src="img/logo-text-mobile.svg" width="101" height="18" alt="Cat Energy">
-            </picture>
-          </a>
+          <div class="logo">
+            <a class="logo__link">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/logo-cat-tablet.svg" width="174" height="50">
+                <img class="logo__cat" src="img/logo-cat-mobile.svg" width="33" height="38" alt="Логотип">
+              </picture>
+              <img class="logo__text" src="img/logo-text-mobile.svg" width="101" height="18" alt="Cat Energy">
+            </a>
+          </div>
 
-          <nav class="main-navigation main-navigation--opened main-navigation--nojs">
+          <nav class="main-navigation main-navigation--closed main-navigation--nojs">
             <button class="main-navigation__toggle" type="button">
               <span class="visually-hidden">Открыть меню</span>
             </button>
@@ -63,7 +65,9 @@
 
               <img class="hero__img" src="img/hero-cup-mobile.webp" srcset="img/hero-cup-mobile@2x.webp" width="280" height="270" alt="Cat Energy с курицей">
             </picture>
-            <a href="form.html" class="button button--hero">подобрать программу</a>
+            <a href="form.html" class="button button--hero">
+              <span class="button__text">подобрать программу</span>
+            </a>
           </div>
         </section>
 
@@ -232,14 +236,12 @@
               </li>
             </ul>
           </div>
-          <div class="footer__academy-logo">
-            <a class="footer__academy-logo-link" href="https://up.htmlacademy.ru">HTML Academy</a>
             <a class="footer__academy-logo-link" href="https://up.htmlacademy.ru">
+              HTML Academy
               <svg class="footer__academy-logo-icon" width="27" height="34" aria-label="Логотип HTML Academy.">
                 <use href="img/sprite.svg#html-academy-logo"></use>
               </svg>
             </a>
-          </div>
         </div>
       </footer>
     </div>

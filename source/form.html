@@ -7,24 +7,32 @@
     <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png"> <!-- 180×180 -->
-    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="manifest" href="img/favicons/manifest.webmanifest">
     <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preload" href="/css/style.min.css" as="style">
+    <link rel="preload" href="/js/script.min.js" as="script">
+    <link rel="preload" href="/img/hero-cup-mobile.webp" as="image">
+    <link rel="preload" href="/img/hero-background-mobile.webp" as="image">
+    <link rel="preload" href="/fonts/lato/Lato-Regular.woff2" as="font">
+    <link rel="preload" href="/fonts/oswald/oswaldregular.woff2" as="font">
   </head>
 
   <body>
     <div class="page-container">
       <header class="header">
         <div class="header__wrapper container">
-          <a href="#" class="header__logo">
-            <picture>
-              <source media="(min-width: 768px)" srcset="img/logo-cat-tablet.svg" width="174" height="50">
 
-              <img class="logo__cat logo" src="img/logo-cat-mobile.svg" width="33" height="38" alt="Логотип">
-              <img class="logo__text logo" src="img/logo-text-mobile.svg" width="101" height="18" alt="Cat Energy">
-            </picture>
-          </a>
+          <div class="logo">
+            <a class="logo__link">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/logo-cat-tablet.svg" width="174" height="50">
+                <img class="logo__cat" src="img/logo-cat-mobile.svg" width="33" height="38" alt="Логотип">
+              </picture>
+              <img class="logo__text" src="img/logo-text-mobile.svg" width="101" height="18" alt="Cat Energy">
+            </a>
+          </div>
 
-          <nav class="main-navigation main-navigation--opened main-navigation--nojs">
+          <nav class="main-navigation main-navigation--closed main-navigation--nojs">
             <button class="main-navigation__toggle" type="button">
               <span class="visually-hidden">Открыть меню</span>
             </button>
@@ -58,7 +66,7 @@
 
             <div class="form__wrapper-grid container">
 
-              <div class="form-group__wrapper-cat container">
+              <div class="form__wrapper-cat container">
                 <fildset class="form-group">
                   <legend class="form-group__title visually-hidden">Данные о коте</legend>
 
@@ -81,7 +89,7 @@
                 </fildset>
               </div>
 
-              <div class="form-group__wrapper-programms">
+              <div class="form__wrapper-programms">
                 <fildset class="form-group">
                   <legend class="form-group__title visually-hidden">Выбор программы</legend>
                   <ul class="form-group__inputs">
@@ -114,7 +122,7 @@
                   <legend class="form-group__title-contacts title-secondary">Контактные данные (владельца кота)</legend>
                 </div>
 
-                <div class="form-group__wrapper-contacts container">
+                <div class="form__wrapper-contacts container">
                   <ul class="form-group__inputs contacts-grid">
                     <li class="form-group__item form-group__item-grid form-group__email-icon">
                       <label class="form-group__label" for="email">E-mail:*</label>
@@ -134,8 +142,8 @@
                   <legend class="form-group__title-comment title-secondary">Комментарий</legend>
                 </div>
 
-                <div class="form-group__wrapper-comment container">
-                  <textarea class="form-group__comment" name="comment" id="comment-form">Расскажите обо всех повадках кота</textarea>
+                <div class="form__wrapper-comment container">
+                  <textarea class="form-group__comment" name="comment" id="comment-form" placeholder="Расскажите обо всех повадках кота"></textarea>
                 </div>
               </fildset>
 
@@ -144,7 +152,7 @@
                   <legend class="form-group__title-add title-secondary">Дополнительно</legend>
                 </div>
 
-                <div class="form-group__wrapper-add container">
+                <div class="form__wrapper-add container">
                   <ul class="form-group__checkbox-inputs">
                     <li class="form-group__item-checkbox">
                       <label class="form-group__checkbox-label">
@@ -225,8 +233,8 @@
             </ul>
           </div>
           <div class="footer__academy-logo">
-            <a class="footer__academy-logo-link" href="https://up.htmlacademy.ru">HTML Academy</a>
             <a class="footer__academy-logo-link" href="https://up.htmlacademy.ru">
+              HTML Academy
               <svg class="footer__academy-logo-icon" width="27" height="34" aria-label="Логотип HTML Academy.">
                 <use href="img/sprite.svg#html-academy-logo"></use>
               </svg>
