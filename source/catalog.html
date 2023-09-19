@@ -7,24 +7,32 @@
     <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png"> <!-- 180×180 -->
-    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="manifest" href="img/favicons/manifest.webmanifest">
     <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preload" href="/css/style.min.css" as="style">
+    <link rel="preload" href="/js/script.min.js" as="script">
+    <link rel="preload" href="/img/hero-cup-mobile.webp" as="image">
+    <link rel="preload" href="/img/hero-background-mobile.webp" as="image">
+    <link rel="preload" href="/fonts/lato/Lato-Regular.woff2" as="font">
+    <link rel="preload" href="/fonts/oswald/oswaldregular.woff2" as="font">
   </head>
 
   <body>
     <div class="page-container">
       <header class="header">
         <div class="header__wrapper container">
-          <a href="#" class="header__logo logo">
-            <picture>
-              <source media="(min-width: 768px)" srcset="img/logo-cat-tablet.svg" width="174" height="50">
 
-              <img class="logo__cat logo" src="img/logo-cat-mobile.svg" width="33" height="38" alt="Логотип">
-              <img class="logo__text logo" src="img/logo-text-mobile.svg" width="101" height="18" alt="Cat Energy">
-            </picture>
-          </a>
+          <div class="logo">
+            <a class="logo__link">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/logo-cat-tablet.svg" width="174" height="50">
+                <img class="logo__cat" src="img/logo-cat-mobile.svg" width="33" height="38" alt="Логотип">
+              </picture>
+              <img class="logo__text" src="img/logo-text-mobile.svg" width="101" height="18" alt="Cat Energy">
+            </a>
+          </div>
 
-          <nav class="main-navigation main-navigation--opened main-navigation--nojs">
+          <nav class="main-navigation main-navigation--closed main-navigation--nojs">
             <button class="main-navigation__toggle" type="button">
               <span class="visually-hidden">Открыть меню</span>
             </button>
@@ -208,9 +216,11 @@
                 <button class="button">Заказать</button>
               </li>
               <li class="cards__item card card--more">
-                <img class="card__plus-icon" src="img/sprite.svg#plus" width="30" height="30" alt="Плюс">
+                <svg class="card__plus-icon" width="30" height="30" alt="Плюс">
+                  <use href="img/sprite.svg#plus"></use>
+                </svg>
                 <h3 class="card__title card__title--more">Показать еще 100500 товаров</h3>
-                <p class="card__description--more description">На самом деле вкусов гораздо больше!</p>
+                <p class="card__description card__description--more description">На самом деле вкусов гораздо больше!</p>
                 <button class="button button--show-all">показать все</button>
               </li>
             </ul>
@@ -312,8 +322,8 @@
             </ul>
           </div>
           <div class="footer__academy-logo">
-            <a class="footer__academy-logo-link" href="https://up.htmlacademy.ru">HTML Academy</a>
             <a class="footer__academy-logo-link" href="https://up.htmlacademy.ru">
+              HTML Academy
               <svg class="footer__academy-logo-icon" width="27" height="34" aria-label="Логотип HTML Academy.">
                 <use href="img/sprite.svg#html-academy-logo"></use>
               </svg>

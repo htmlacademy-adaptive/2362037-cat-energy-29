@@ -5,9 +5,11 @@
 .page-content__wrapper {
   margin: 0 auto;
   padding: 27px 20px 39px 20px;
+  border-top: 1px solid #e6e6e6;
 
   @media (min-width: $tablet-width) {
     padding: 65px 30px 84px 30px;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {
