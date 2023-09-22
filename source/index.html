@@ -19,12 +19,13 @@
 
   <body>
     <div class="page-container">
-      <header class="header">
+      <header class="header header-absolute">
         <div class="header__wrapper container">
 
           <div class="logo">
             <a class="logo__link">
               <picture>
+                <source media="(min-width: 1440px)" srcset="img/logo-cat-desktop.svg" width="202" height="59">
                 <source media="(min-width: 768px)" srcset="img/logo-cat-tablet.svg" width="174" height="50">
                 <img class="logo__cat" src="img/logo-cat-mobile.svg" width="33" height="38" alt="Логотип">
               </picture>
@@ -60,10 +61,13 @@
             <h1 class="hero__title title">Функциональное питание для котов</h1>
             <p class="hero__text">Занялся собой? Займись котом!</p>
             <picture>
-              <source media="(min-width: 1440px)" srcset="img/hero-cup-desktop.webp 1x, img/hero-cup-desktop@2x.webp 2x" width="552" height="499">
-              <source media="(min-width: 768px)" srcset="img/hero-cup-tablet.webp 1x, img/hero-cup-tablet@2x.webp 2x" width="709" height="609">
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/hero-cup-desktop.webp 1x, img/hero-cup-desktop@2x.webp 2x" width="552" height="499">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/hero-cup-tablet.webp 1x, img/hero-cup-tablet@2x.webp 2x" width="709" height="609">
+              <source type="image/webp" srcset="img/hero-cup-mobile.webp 1x, img/hero-cup-mobile@2x.webp 2x" width="280" height="270">
 
-              <img class="hero__img" src="img/hero-cup-mobile.webp" srcset="img/hero-cup-mobile@2x.webp" width="280" height="270" alt="Cat Energy с курицей">
+              <source media="(min-width: 1440px)" srcset="img/hero-cup-desktop.png 1x, img/hero-cup-desktop@2x.png 2x" width="552" height="499">
+              <source media="(min-width: 768px)" srcset="img/hero-cup-tablet.jpg 1x, img/hero-cup-tablet@2x.jpg 2x" width="709" height="609">
+              <img class="hero__img" src="img/hero-cup-mobile.png" srcset="img/hero-cup-mobile@2x.png" width="280" height="270" alt="Cat Energy с курицей">
             </picture>
             <a href="form.html" class="button button--hero">
               <span class="button__text">подобрать программу</span>
@@ -165,14 +169,20 @@
               <div class="slider__wrapper">
                 <div class="slider__after">
                   <picture>
-                    <source media="(min-width: 768px)" srcset="img/cat-after-tablet.webp 1x, img/cat-after-tablet@2x.webp 2x" width="560" height="512">
-                    <img src="img/cat-after-mobile.webp" srcset="img/cat-after-mobile@2x.webp 2x" width="280" height="256" alt="Кот после похудения">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-after-tablet.webp 1x, img/cat-after-tablet@2x.webp 2x" width="560" height="512">
+                    <source type="image/webp" srcset="img/cat-after-mobile.webp 1x, img/cat-after-mobile@2x.webp 2x" width="280" height="256">
+
+                    <source media="(min-width: 768px)" srcset="img/cat-after-tablet.png 1x, img/cat-after-tablet@2x.png 2x" width="560" height="512">
+                    <img src="img/cat-after-mobile.png" srcset="img/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Кот после похудения">
                   </picture>
                 </div>
                 <div class="slider__before">
                   <picture>
-                    <source media="(min-width: 768px)" srcset="img/cat-before-tablet.webp 1x, img/cat-before-tablet@2x.webp 2x" width="560" height="512">
-                    <img src="img/cat-before-mobile.webp" srcset="img/cat-before-mobile@2x.webp 2x" width="280" height="256" alt="Кот до похудения">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-before-tablet.webp 1x, img/cat-before-tablet@2x.webp 2x" width="560" height="512">
+                    <source type="image/webp" srcset="img/cat-before-mobile.webp 1x, img/cat-before-mobile@2x.webp 2x" width="280" height="256">
+
+                    <source media="(min-width: 768px)" srcset="img/cat-before-tablet.png 1x, img/cat-before-tablet@2x.png 2x" width="560" height="512">
+                    <img src="img/cat-before-mobile.png" srcset="img/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Кот до похудения">
                   </picture>
                 </div>
                 <div class="slider__curtain">
@@ -208,9 +218,9 @@
 
       <footer class="footer">
         <div class="footer__wrapper container">
-          <div class="footer__logo">
+          <a href="index.html" class="footer__logo">
             <img src="img/footer-logo.svg" width="128" height="24" alt="Логотип Cat Enegry.">
-          </div>
+          </a>
           <div class="socials footer__socials">
             <ul class="socials__list">
               <li class="socials__item">

@@ -1,3 +1,9 @@
+.form-group {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
 //Данные о коте
 
 .form-group__inputs {
@@ -25,22 +31,27 @@
 .form-group__item-grid {
   display: grid;
   grid-template-columns: max-content 1fr;
-  gap: 13px;
+  gap: 0 13px;
   align-items: center;
 }
 
 .form-group__input {
-  padding: 10px 15px 9px 15px;
+  padding: 10px 35px 9px 15px;
   min-width: 173px;
   border: 1px solid #e7e7e7;
 
   @media (min-width: $tablet-width) {
-    padding: 10px 20px 9px 20px;
+    padding: 10px 35px 9px 20px;
   }
 }
 
+.form-group__input:active,
 .form-group__input:focus {
   border-color: #444444;
+}
+
+.error {
+  border: 2px solid #ff8282;
 }
 
 .form-group__input[type="number"] {
@@ -49,7 +60,7 @@
 
 .form-group__input[placeholder] {
   color: #444444;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -143,12 +154,19 @@
   content: "";
   width: 19px;
   height: 14px;
-  right: 14px;
+  top: 14px;
+  right: 12px;
   mask-image: url("../../img/sprite.svg#email");
   background-color: #000000;
+
+  @media (min-width: $desktop-width) {
+    top: 18px;
+    right: 16px;
+  }
 }
 
-.form-group__email-icon:focus::before {
+.form-group__input[type="email"]:active + .form-group__email-icon::before,
+.form-group__input[type="email"]:focus + .form-group__email-icon::before {
   background-color: #68b738;
 }
 
@@ -157,12 +175,19 @@
   content: "";
   width: 19px;
   height: 14px;
-  right: 14px;
+  top: 14px;
+  right: 12px;
   mask-image: url("../../img/sprite.svg#tel");
   background-color: #000000;
+
+  @media (min-width: $desktop-width) {
+    top: 18px;
+    right: 16px;
+  }
 }
 
-.form-group__tel-icon:focus::before {
+.form-group__input[type="tel"]:active + .form-group__tel-icon::before,
+.form-group__input[type="tel"]:focus + .form-group__tel-icon::before {
   background-color: #68b738;
 }
 
@@ -182,7 +207,7 @@
   min-height: 148px;
   border: 1px solid #e7e7e7;
   color: #444444;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -202,7 +227,7 @@
 
 .form-group__comment[placeholder] {
   color: #444444;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;

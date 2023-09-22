@@ -11,8 +11,6 @@
     <link href="css/style.min.css" rel="stylesheet">
     <link rel="preload" href="/css/style.min.css" as="style">
     <link rel="preload" href="/js/script.min.js" as="script">
-    <link rel="preload" href="/img/hero-cup-mobile.webp" as="image">
-    <link rel="preload" href="/img/hero-background-mobile.webp" as="image">
     <link rel="preload" href="/fonts/lato/Lato-Regular.woff2" as="font">
     <link rel="preload" href="/fonts/oswald/oswaldregular.woff2" as="font">
   </head>
@@ -25,6 +23,7 @@
           <div class="logo">
             <a class="logo__link">
               <picture>
+                <source media="(min-width: 1440px)" srcset="img/logo-cat-desktop.svg" width="202" height="59">
                 <source media="(min-width: 768px)" srcset="img/logo-cat-tablet.svg" width="174" height="50">
                 <img class="logo__cat" src="img/logo-cat-mobile.svg" width="33" height="38" alt="Логотип">
               </picture>
@@ -65,9 +64,13 @@
               <li class="cards__item card">
                 <a href="#" class="card__image">
                   <picture>
-                    <source media="(min-width: 1440px)" srcset="img/pro-500-chiken-desktop.webp 1x, img/pro-500-chiken-desktop@2x.webp 2x" width="169" height="210">
-                    <source media="(min-width: 768px)" srcset="img/pro-500-chiken-tablet.webp 1x, img/pro-500-chiken-tablet@2x.webp 2x" width="200" height="210">
-                    <img src="img/pro-500-chiken-mobile.webp" srcset="img/pro-500-chiken-mobile@2x.webp 2x" width="140" height="107" alt="">
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/pro-500-chiken-desktop.webp 1x, img/pro-500-chiken-desktop@2x.webp 2x" width="169" height="210">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/pro-500-chiken-tablet.webp 1x, img/pro-500-chiken-tablet@2x.webp 2x" width="200" height="210">
+                    <source type="image/webp" srcset="img/pro-500-chiken-mobile.webp 1x, img/pro-500-chiken-mobile@2x.webp 2x" width="140" height="107">
+
+                    <source media="(min-width: 1440px)" srcset="img/pro-500-chiken-desktop.png 1x, img/pro-500-chiken-desktop@2x.png 2x" width="169" height="210">
+                    <source media="(min-width: 768px)" srcset="img/pro-500-chiken-tablet.png 1x, img/pro-500-chiken-tablet@2x.png 2x" width="200" height="210">
+                    <img src="img/pro-500-chiken-mobile.png" srcset="img/pro-500-chiken-mobile@2x.png 2x" width="140" height="107" alt="">
                   </picture>
                 </a>
                 <a href="#" class="card__link">
@@ -87,9 +90,13 @@
               <li class="cards__item card">
                 <a href="#" class="card__image">
                   <picture>
-                    <source media="(min-width: 1440px)" srcset="img/pro-1000-chiken-desktop.webp 1x, img/pro-1000-chiken-desktop@2x.webp 2x" width="169" height="210">
-                    <source media="(min-width: 768px)" srcset="img/pro-1000-chiken-tablet.webp 1x, img/pro-1000-chiken-tablet@2x.webp 2x" width="200" height="210">
-                    <img src="img/pro-1000-chiken-mobile.webp" srcset="img/pro-1000-chiken-mobile@2x.webp 2x" width="140" height="107" alt="">
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/pro-1000-chiken-desktop.webp 1x, img/pro-1000-chiken-desktop@2x.webp 2x" width="169" height="210">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/pro-1000-chiken-tablet.webp 1x, img/pro-1000-chiken-tablet@2x.webp 2x" width="200" height="210">
+                    <source type="image/webp" srcset="img/pro-1000-chiken-mobile.webp 1x, img/pro-1000-chiken-mobile@2x.webp 2x" width="140" height="107">
+
+                    <source media="(min-width: 1440px)" srcset="img/pro-1000-chiken-desktop.png 1x, img/pro-1000-chiken-desktop@2x.png 2x" width="169" height="210">
+                    <source media="(min-width: 768px)" srcset="img/pro-1000-chiken-tablet.png 1x, img/pro-1000-chiken-tablet@2x.png 2x" width="200" height="210">
+                    <img src="img/pro-1000-chiken-mobile.png" srcset="img/pro-1000-chiken-mobile@2x.png 2x" width="140" height="107" alt="">
                   </picture>
                   </a>
                 <a href="#" class="card__link">
@@ -109,9 +116,13 @@
               <li class="cards__item card">
                 <a href="#" class="card__image">
                   <picture>
-                    <source media="(min-width: 1440px)" srcset="img/pro-500-fish-desktop.webp 1x, img/pro-500-fish-desktop@2x.webp 2x" width="169" height="210">
-                    <source media="(min-width: 768px)" srcset="img/pro-500-fish-tablet.webp 1x, img/pro-500-fish-tablet@2x.webp 2x" width="200" height="210">
-                    <img src="img/pro-500-fish-mobile.webp" srcset="img/pro-500-fish-mobile@2x.webp 2x" width="140" height="107" alt="">
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/pro-500-fish-desktop.webp 1x, img/pro-500-fish-desktop@2x.webp 2x" width="169" height="210">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/pro-500-fish-tablet.webp 1x, img/pro-500-fish-tablet@2x.webp 2x" width="200" height="210">
+                    <source type="image/webp" srcset="img/pro-500-fish-mobile.webp 1x, img/pro-500-fish-mobile@2x.webp 2x" width="140" height="107">
+
+                    <source media="(min-width: 1440px)" srcset="img/pro-500-fish-desktop.png 1x, img/pro-500-fish-desktop@2x.png 2x" width="169" height="210">
+                    <source media="(min-width: 768px)" srcset="img/pro-500-fish-tablet.png 1x, img/pro-500-fish-tablet@2x.png 2x" width="200" height="210">
+                    <img src="img/pro-500-fish-mobile.png" srcset="img/pro-500-fish-mobile@2x.png 2x" width="140" height="107" alt="">
                   </picture>
                 </a>
                 <a href="#" class="card__link">
@@ -131,9 +142,13 @@
               <li class="cards__item card">
                 <a href="#" class="card__image">
                   <picture>
-                    <source media="(min-width: 1440px)" srcset="img/pro-1000-fish-desktop.webp 1x, img/pro-1000-fish-desktop@2x.webp 2x" width="169" height="210">
-                    <source media="(min-width: 768px)" srcset="img/pro-1000-fish-tablet.webp 1x, img/pro-1000-fish-tablet@2x.webp 2x" width="200" height="210">
-                    <img src="img/pro-1000-fish-mobile.webp" srcset="img/pro-1000-fish-mobile@2x.webp 2x" width="140" height="107" alt="">
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/pro-1000-fish-desktop.webp 1x, img/pro-1000-fish-desktop@2x.webp 2x" width="169" height="210">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/pro-1000-fish-tablet.webp 1x, img/pro-1000-fish-tablet@2x.webp 2x" width="200" height="210">
+                    <source type="image/webp" srcset="img/pro-1000-fish-mobile.webp 1x, img/pro-1000-fish-mobile@2x.webp 2x" width="140" height="107">
+
+                    <source media="(min-width: 1440px)" srcset="img/pro-1000-fish-desktop.png 1x, img/pro-1000-fish-desktop@2x.png 2x" width="169" height="210">
+                    <source media="(min-width: 768px)" srcset="img/pro-1000-fish-tablet.png 1x, img/pro-1000-fish-tablet@2x.png 2x" width="200" height="210">
+                    <img src="img/pro-1000-fish-mobile.png" srcset="img/pro-1000-fish-mobile@2x.png 2x" width="140" height="107" alt="">
                   </picture>
                 </a>
                 <a href="#" class="card__link">
@@ -153,9 +168,13 @@
               <li class="cards__item card">
                 <a href="#" class="card__image">
                   <picture>
-                    <source media="(min-width: 1440px)" srcset="img/pro-500-buckwheat-desktop.webp 1x, img/pro-500-buckwheat-desktop@2x.webp 2x" width="169" height="210">
-                    <source media="(min-width: 768px)" srcset="img/pro-500-buckwheat-tablet.webp 1x, img/pro-500-buckwheat-tablet@2x.webp 2x" width="200" height="210">
-                    <img src="img/pro-500-buckwheat-mobile.webp" srcset="img/pro-500-buckwheat-mobile@2x.webp 2x" width="140" height="107" alt="">
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/pro-500-buckwheat-desktop.webp 1x, img/pro-500-buckwheat-desktop@2x.webp 2x" width="169" height="210">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/pro-500-buckwheat-tablet.webp 1x, img/pro-500-buckwheat-tablet@2x.webp 2x" width="200" height="210">
+                    <source type="image/webp" srcset="img/pro-500-buckwheat-mobile.webp 1x, img/pro-500-buckwheat-mobile@2x.webp 2x" width="140" height="107">
+
+                    <source media="(min-width: 1440px)" srcset="img/pro-500-buckwheat-desktop.png 1x, img/pro-500-buckwheat-desktop@2x.png 2x" width="169" height="210">
+                    <source media="(min-width: 768px)" srcset="img/pro-500-buckwheat-tablet.png 1x, img/pro-500-buckwheat-tablet@2x.png 2x" width="200" height="210">
+                    <img src="img/pro-500-buckwheat-mobile.png" srcset="img/pro-500-buckwheat-mobile@2x.png 2x" width="140" height="107" alt="">
                   </picture>
                 </a>
                 <a href="#" class="card__link">
@@ -175,9 +194,13 @@
               <li class="cards__item card">
                 <a href="#" class="card__image">
                   <picture>
-                    <source media="(min-width: 1440px)" srcset="img/pro-1000-buckwheat-desktop.webp 1x, img/pro-1000-buckwheat-desktop@2x.webp 2x" width="169" height="210">
-                    <source media="(min-width: 768px)" srcset="img/pro-1000-buckwheat-tablet.webp 1x, img/pro-1000-buckwheat-tablet@2x.webp 2x" width="200" height="210">
-                    <img src="img/pro-1000-buckwheat-mobile.webp" srcset="img/pro-1000-buckwheat-mobile@2x.webp 2x" width="140" height="107" alt="">
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/pro-1000-buckwheat-desktop.webp 1x, img/pro-1000-buckwheat-desktop@2x.webp 2x" width="169" height="210">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/pro-1000-buckwheat-tablet.webp 1x, img/pro-1000-buckwheat-tablet@2x.webp 2x" width="200" height="210">
+                    <source type="image/webp" srcset="img/pro-1000-buckwheat-mobile.webp 1x, img/pro-1000-buckwheat-mobile@2x.webp 2x" width="140" height="107">
+
+                    <source media="(min-width: 1440px)" srcset="img/pro-1000-buckwheat-desktop.png 1x, img/pro-1000-buckwheat-desktop@2x.png 2x" width="169" height="210">
+                    <source media="(min-width: 768px)" srcset="img/pro-1000-buckwheat-tablet.png 1x, img/pro-1000-buckwheat-tablet@2x.png 2x" width="200" height="210">
+                    <img src="img/pro-1000-buckwheat-mobile.png" srcset="img/pro-1000-buckwheat-mobile@2x.png 2x" width="140" height="107" alt="">
                   </picture>
                 </a>
                 <a href="#" class="card__link">
@@ -197,9 +220,13 @@
               <li class="cards__item card">
                 <a href="#" class="card__image">
                   <picture>
-                    <source media="(min-width: 1440px)" srcset="img/slim-500-rice-desktop.webp 1x, img/slim-500-rice-desktop@2x.webp 2x" width="169" height="210">
-                    <source media="(min-width: 768px)" srcset="img/slim-500-rice-tablet.webp 1x, img/slim-500-rice-tablet@2x.webp 2x" width="200" height="210">
-                    <img src="img/slim-500-rice-mobile.webp" srcset="img/slim-500-rice-mobile@2x.webp 2x" width="140" height="107" alt="">
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/slim-500-rice-desktop.webp 1x, img/slim-500-rice-desktop@2x.webp 2x" width="169" height="210">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/slim-500-rice-tablet.webp 1x, img/slim-500-rice-tablet@2x.webp 2x" width="200" height="210">
+                    <source type="image/webp" srcset="img/slim-500-rice-mobile.webp 1x, img/slim-500-rice-mobile@2x.webp 2x" width="140" height="107">
+
+                    <source media="(min-width: 1440px)" srcset="img/slim-500-rice-desktop.png 1x, img/slim-500-rice-desktop@2x.png 2x" width="169" height="210">
+                    <source media="(min-width: 768px)" srcset="img/slim-500-rice-tablet.png 1x, img/slim-500-rice-tablet@2x.png 2x" width="200" height="210">
+                    <img src="img/slim-500-rice-mobile.png" srcset="img/slim-500-rice-mobile@2x.png 2x" width="140" height="107" alt="">
                   </picture>
                 </a>
                 <a href="#" class="card__link">
@@ -216,19 +243,19 @@
                 <button class="button">Заказать</button>
               </li>
               <li class="cards__item card card--more">
-                <svg class="card__plus-icon" width="30" height="30" alt="Плюс">
+                <svg class="card__plus-icon" width="30" height="30">
                   <use href="img/sprite.svg#plus"></use>
                 </svg>
                 <h3 class="card__title card__title--more">Показать еще 100500 товаров</h3>
                 <p class="card__description card__description--more description">На самом деле вкусов гораздо больше!</p>
-                <button class="button button--show-all">показать все</button>
+                <a href="#" class="button button--show-all">показать все</a>
               </li>
             </ul>
           </div>
         </section>
 
         <section class="other-products">
-          <div class="title-wrapper">
+          <div class="title-line">
             <h2 class="other-products__title title-secondary">Дополнительные товары</h2>
           </div>
 
@@ -293,9 +320,9 @@
 
       <footer class="footer">
         <div class="footer__wrapper container">
-          <div class="footer__logo">
+          <a class="footer__logo">
             <img src="img/footer-logo.svg" width="128" height="24" alt="Логотип Cat Enegry.">
-          </div>
+          </a>
           <div class="socials footer__socials">
             <ul class="socials__list">
               <li class="socials__item">
