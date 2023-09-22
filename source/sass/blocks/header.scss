@@ -1,6 +1,8 @@
 .header {
   z-index: 2;
+}
 
+.header-absolute {
   @media (min-width: $desktop-width) {
     position: absolute;
     margin: 0 auto;

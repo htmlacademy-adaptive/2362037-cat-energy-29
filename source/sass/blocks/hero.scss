@@ -21,7 +21,7 @@
     background-repeat: no-repeat;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/hero-background-desktop@2x.webp"), linear-gradient(to right, #ffffff 50%, #64a73c 50%);
+      background-image: url("../../img/hero-background-desktop@2x.webp"), linear-gradient(to right, #ffffff 0%, #64a73c 0%);
       background-size: 50% auto;
     }
   }

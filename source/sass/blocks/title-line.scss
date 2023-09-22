@@ -1,13 +1,14 @@
-.title-wrapper {
+.title-line {
   display: flex;
   gap: 20px;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     gap: 40px;
   }
 }
 
-.title-wrapper::before {
+.title-line::before {
   content: "";
   height: 17px;
   width: calc(50% - 160px);
@@ -24,7 +25,7 @@
   }
 }
 
-.title-wrapper::after {
+.title-line::after {
   content: "";
   height: 17px;
   width: 10px;

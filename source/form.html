@@ -11,8 +11,6 @@
     <link href="css/style.min.css" rel="stylesheet">
     <link rel="preload" href="/css/style.min.css" as="style">
     <link rel="preload" href="/js/script.min.js" as="script">
-    <link rel="preload" href="/img/hero-cup-mobile.webp" as="image">
-    <link rel="preload" href="/img/hero-background-mobile.webp" as="image">
     <link rel="preload" href="/fonts/lato/Lato-Regular.woff2" as="font">
     <link rel="preload" href="/fonts/oswald/oswaldregular.woff2" as="font">
   </head>
@@ -25,6 +23,7 @@
           <div class="logo">
             <a class="logo__link">
               <picture>
+                <source media="(min-width: 1440px)" srcset="img/logo-cat-desktop.svg" width="202" height="59">
                 <source media="(min-width: 768px)" srcset="img/logo-cat-tablet.svg" width="174" height="50">
                 <img class="logo__cat" src="img/logo-cat-mobile.svg" width="33" height="38" alt="Логотип">
               </picture>
@@ -67,13 +66,13 @@
             <div class="form__wrapper-grid container">
 
               <div class="form__wrapper-cat container">
-                <fildset class="form-group">
+                <fieldset class="form-group">
                   <legend class="form-group__title visually-hidden">Данные о коте</legend>
 
                   <ul class="form-group__inputs">
                     <li class="form-group__item form-group__item-grid">
                       <label class="form-group__label" for="name-of-cat">Имя:*</label>
-                      <input class="form-group__input" type="text" name="name" id="name-of-cat" placeholder="Барсик" required>
+                      <input class="form-group__input error" type="text" name="name" id="name-of-cat" placeholder="Барсик" required>
                     </li>
 
                     <li class="form-group__item form-group__item-grid">
@@ -86,11 +85,11 @@
                       <input class="form-group__input" type="number" name="age" id="age-number" placeholder="7" required>
                     </li>
                   </ul>
-                </fildset>
+                </fieldset>
               </div>
 
               <div class="form__wrapper-programms">
-                <fildset class="form-group">
+                <fieldset class="form-group">
                   <legend class="form-group__title visually-hidden">Выбор программы</legend>
                   <ul class="form-group__inputs">
                     <li class="form-group__item-radio">
@@ -112,45 +111,48 @@
                       </label>
                     </li>
                   </ul>
-                </fildset>
+                </fieldset>
               </div>
 
             </div>
 
-              <fildset class="form-group">
-                <div class="title-wrapper">
-                  <legend class="form-group__title-contacts title-secondary">Контактные данные (владельца кота)</legend>
-                </div>
+              <fieldset class="form-group">
+                <legend class="title-line">
+                  <span class="form-group__title-contacts title-secondary ">Контактные данные (владельца кота)</span>
+                </legend>
 
                 <div class="form__wrapper-contacts container">
                   <ul class="form-group__inputs contacts-grid">
-                    <li class="form-group__item form-group__item-grid form-group__email-icon">
+                    <li class="form-group__item form-group__item-grid">
                       <label class="form-group__label" for="email">E-mail:*</label>
                       <input class="form-group__input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+                      <span class="form-group__email-icon"></span>
                     </li>
 
-                    <li class="form-group__item form-group__item-grid form-group__tel-icon">
+                    <li class="form-group__item form-group__item-grid">
                       <label class="form-group__label" for="tel">Телефон:*</label>
                       <input class="form-group__input" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90" required>
+                      <span class="form-group__tel-icon"></span>
                     </li>
                   </ul>
                 </div>
-              </fildset>
+              </fieldset>
 
-              <fildset class="form-group">
-                <div class="title-wrapper">
-                  <legend class="form-group__title-comment title-secondary">Комментарий</legend>
-                </div>
+              <fieldset class="form-group">
+                <legend class="title-line">
+                  <span class="form-group__title-comment title-secondary ">Комментарий</span>
+                </legend>
 
                 <div class="form__wrapper-comment container">
+                  <label class="visually-hidden">Текстовое поле.</label>
                   <textarea class="form-group__comment" name="comment" id="comment-form" placeholder="Расскажите обо всех повадках кота"></textarea>
                 </div>
-              </fildset>
+              </fieldset>
 
-              <fildset class="form-group">
-                <div class="title-wrapper">
-                  <legend class="form-group__title-add title-secondary">Дополнительно</legend>
-                </div>
+              <fieldset class="form-group">
+                <legend class="title-line">
+                  <span class="form-group__title-add title-secondary ">Дополнительно</span>
+                </legend>
 
                 <div class="form__wrapper-add container">
                   <ul class="form-group__checkbox-inputs">
@@ -184,7 +186,7 @@
                     <p class="form__note">* — Обязательные поля</p>
                   </div>
                 </div>
-              </fildset>
+              </fieldset>
 
         </form>
 
@@ -204,9 +206,9 @@
 
       <footer class="footer">
         <div class="footer__wrapper container">
-          <div class="footer__logo">
+          <a href="index.html" class="footer__logo">
             <img src="img/footer-logo.svg" width="128" height="24" alt="Логотип Cat Enegry.">
-          </div>
+          </a>
           <div class="socials footer__socials">
             <ul class="socials__list">
               <li class="socials__item">
