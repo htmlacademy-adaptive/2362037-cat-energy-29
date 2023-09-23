@@ -21,7 +21,7 @@
         <div class="header__wrapper container">
 
           <div class="logo">
-            <a class="logo__link">
+            <a href="index.html" class="logo__link">
               <picture>
                 <source media="(min-width: 1440px)" srcset="img/logo-cat-desktop.svg" width="202" height="59">
                 <source media="(min-width: 768px)" srcset="img/logo-cat-tablet.svg" width="174" height="50">
@@ -72,7 +72,7 @@
                   <ul class="form-group__inputs">
                     <li class="form-group__item form-group__item-grid">
                       <label class="form-group__label" for="name-of-cat">Имя:*</label>
-                      <input class="form-group__input error" type="text" name="name" id="name-of-cat" placeholder="Барсик" required>
+                      <input class="form-group__input" type="text" name="name" id="name-of-cat" placeholder="Барсик" required>
                     </li>
 
                     <li class="form-group__item form-group__item-grid">
@@ -144,7 +144,7 @@
                 </legend>
 
                 <div class="form__wrapper-comment container">
-                  <label class="visually-hidden">Текстовое поле.</label>
+                  <label class="visually-hidden" for="comment-form">Текстовое поле.</label>
                   <textarea class="form-group__comment" name="comment" id="comment-form" placeholder="Расскажите обо всех повадках кота"></textarea>
                 </div>
               </fieldset>
@@ -182,7 +182,9 @@
                     </li>
                   </ul>
                   <div class="form__wrapper-button">
-                    <button class="button button--form" type="submit">отправить заявку</button>
+                    <button class="button button--form" type="submit">
+                      <span class="button__text">отправить заявку</span>
+                    </button>
                     <p class="form__note">* — Обязательные поля</p>
                   </div>
                 </div>

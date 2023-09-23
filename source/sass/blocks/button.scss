@@ -33,11 +33,11 @@
   }
 }
 
-.button--hero:hover {
+.button:hover {
   background-color: #5eaa2f;
 }
 
-.button--hero:active .button__text {
+.button:active .button__text {
   opacity: 0.3;
 }
 
@@ -61,4 +61,8 @@
   text-transform: uppercase;
   background-color: #f2f2f2;
   text-decoration: none;
+}
+
+.button--show-all:hover {
+  background-color: #ebebeb;
 }
