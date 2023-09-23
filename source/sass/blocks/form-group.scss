@@ -131,6 +131,10 @@
   }
 }
 
+.form-group__radio-label[disabled] {
+  opacity: 0.3;
+}
+
 //Контакты владельца
 
 .form-group__title-contacts {
@@ -306,4 +310,8 @@
   @media (min-width: $tablet-width) {
     background-size: 24px 19px;
   }
+}
+
+.form-group__checkbox-label[disabled] {
+  opacity: 0.3;
 }
